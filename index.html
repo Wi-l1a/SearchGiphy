@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>GIPHY-API</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <form class="gif_search">
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">нажмите ENTER</label>
+                    <select id="count">
+                        <option class="count-1" value="10">10</option>
+                        <option class="count-1" value="20">20</option>
+                        <option class="count-1" value="30">30</option>
+                        <option class="count-1" value="40">40</option>
+                        <option class="count-1" value="50">50</option>
+                    </select>
+                </div>
+                <h1>GIF-Search</h1>
+            </form>
+            <div class="output"></div>
+        </div>
+    </section>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

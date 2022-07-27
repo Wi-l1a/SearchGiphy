@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+#name {
+    font-size: 30px;
+
+}
+
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: url(../img/7Ik1.gif);
+    height: 100vh;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#count {
+    padding: 0 50px;
+    color: white;
+    font-size: 30px;
+    background: rgb(3, 0, 36);
+    background: rgba(3, 0, 36, 0.7931547619047619) 4%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.card {
+    width: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid 2px;
+    border-image: linear-gradient(to right, #ff0000, #1000ff) 1 0%;
+    animation: card 3s infinite alternate;
+}
+
+@keyframes card {
+    0% {}
+
+    100% {
+        border-image: linear-gradient(to left, #ff0000, #1000ff) 1 0%;
+    }
+}
+
+.h2 {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px 5px black;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 47, 255);
+}
+
+h1 {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 100px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, rgb(0, 34, 255), rgb(0, 255, 47));
+
+}
+
+.img {
+    width: 100%;
+}
+
+p {
+    color: white;
+}
